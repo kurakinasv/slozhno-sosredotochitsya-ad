@@ -4,8 +4,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html {
@@ -14,10 +12,11 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 0;
   width: 100%;
   min-inline-size: 375px;
   max-inline-size: 1440px;
-  margin: 0 auto;
 }
 
 h1,

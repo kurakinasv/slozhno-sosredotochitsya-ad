@@ -1,6 +1,9 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  margin: 0;
+  padding: 0 var(--page-padding);
+
   background-color: var(--bg-color);
   background-image: var(--bg-image);
   background-attachment: fixed;
@@ -11,7 +14,6 @@
   color: var(--text-color);
   font-family: var(--font-family);
   min-height: var(--full-height);
-  padding: var(--page-padding);
 }
 
 .title-decor {
@@ -42,7 +44,14 @@
 
 .header {
   height: var(--focus-height);
-  padding: 65px 0 56px 0;
+  min-height: var(--focus-min-height);
+  padding: 10px 0;
+  position: relative;
+}
+
+.header__container {
+  height: 100%;
+  padding: 64px 0 56px 0;
   position: relative;
 
   display: grid;
@@ -64,7 +73,7 @@
 .header__rec::after {
   content: '';
   position: relative;
-  top: -1px;
+  top: -2px;
   display: inline-block;
   width: 9px;
   height: 9px;
@@ -78,7 +87,7 @@
 .header__content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .header__title {
@@ -151,12 +160,18 @@
 
 .header__theme-menu-button_active {
   border-color: var(--theme-button-color);
+  pointer-events: none;
+  cursor: default;
 }
 
 @media (width >=768px) {
   .header {
-    padding: 0;
+    padding: 20px 0;
+  }
+
+  .header__container {
     padding-top: 172px;
+    padding-bottom: 163px;
   }
 
   .header__title {
@@ -171,8 +186,9 @@
 }
 
 @media (width >=1024px) {
-  .header {
-    padding: 0;
+  .header__container {
+    padding-top: 0;
+    padding-bottom: 114px;
   }
 
   .header__theme-menu {
@@ -194,13 +210,14 @@
 }
 
 .main {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 /* Main text blocks */
 
 .main__text-sections {
-  padding-block: 50px;
+  padding-block-start: 40px;
+  padding-block-end: 50px;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -264,10 +281,12 @@
 
 @media (width >=768px) {
   .main {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 
   .main__text-sections {
+    padding-block-start: 60px;
+    padding-block-end: 80px;
     gap: 80px;
   }
 
@@ -308,6 +327,7 @@
 
 @media (width >=1024px) {
   .main__section {
+    grid-template-columns: 315px 2fr;
     align-items: start;
   }
 
@@ -318,6 +338,11 @@
 
   .main__content {
     grid-column: 2;
+  }
+
+  .main__section_column .main__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -348,12 +373,11 @@
 
   .gallery__images {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 192px 230px 318px;
     gap: 20px;
     grid-template-areas:
       'sunset sunset ice-cream'
       'tape books ice-cream'
-      'tape street street'
       'tape street street';
   }
 
@@ -382,18 +406,32 @@
   }
 }
 
+@media (width >=1024px) {
+  .gallery__images {
+    grid-template-rows: 260px 315px 433px;
+  }
+}
+
 /* Footer */
 
 .footer {
   height: var(--focus-height);
+  min-height: var(--focus-min-height);
+  padding: 10px 0;
+}
+
+.footer__container {
+  height: 100%;
+  position: relative;
 
   display: grid;
   grid-template-rows: 1fr;
-  position: relative;
-}
-
-.footer__focus {
-  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (width >=768px) {
+  .footer {
+    padding: 20px 0;
+  }
 }

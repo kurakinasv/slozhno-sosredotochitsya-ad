@@ -16,40 +16,42 @@
     <script src="./scripts/script.js"></script>
   </head>
   <body class="page">
-    <header class="header decorated-zone">
-      <div class="header__rec" aria-hidden="true">REC</div>
-      <nav class="header__theme-menu">
-        <ul class="header__theme-menu-list">
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
-            >
-              День
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
-            >
-              Авто
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
-            >
-              Неон
-            </button>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__content">
-        <h2 class="header__title focus-title">no focus</h2>
-        <div class="header__description-wrapper">
-          <h1 class="header__description title-decor">Что делать, когда не можешь делать ничего<br>Или почему нам так сложно сконцентрироваться, особенно когда очень надо</h1>
+    <header class="header">
+      <div class="header__container decorated-zone">
+        <div class="header__rec" aria-hidden="true">REC</div>
+        <nav class="header__theme-menu">
+          <ul class="header__theme-menu-list">
+            <li class="header__theme-menu-item">
+              <button
+                class="header__theme-menu-button header__theme-menu-button_type_light"
+              >
+                День
+              </button>
+            </li>
+            <li class="header__theme-menu-item">
+              <button
+                class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
+                disabled
+              >
+                Авто
+              </button>
+            </li>
+            <li class="header__theme-menu-item">
+              <button
+                class="header__theme-menu-button header__theme-menu-button_type_dark"
+              >
+                Неон
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__content">
+          <h2 class="header__title focus-title">no focus</h2>
+          <div class="header__description-wrapper">
+            <h1 class="header__description title-decor">Что делать, когда не можешь делать ничего<br>Или почему нам так сложно сконцентрироваться, особенно когда очень надо</h1>
+          </div>
         </div>
-      </div>
+      </div>  
     </header>
     <main class="main">
       <section class="main__text-sections">
@@ -71,11 +73,11 @@
           <div class="main__content">
             <div class="main__subsection">
               <h3 class="main__subsection-title title-decor">Многозадачность</h3>
-              <p class="main__text">Да-да, это та самая ситуация, когда на экране ноутбука — код, в наушниках — подкаст, а на компьютере фоном — ещё и видео с забавными утятами. В результате мозг пытается переключиться с одной задачи на другую — и просто не может. А чтобы вернуться к состоянию полной концентрации, человеку в среднем нужно 20 минут. Вот и получается, что чем больше времени мы проводим в гаджетах, тем больше времени затем нужно, чтобы вернуться к работе.</p>
+              <p class="main__text">Как концентрация может снижаться из-за… концентрации? Любая стрессовая ситуация (и резко меняющийся мир в целом) заставляет наш мозг постоянно «сканировать» окружающую среду на предмет опасности. Например, читать новости вместо работы. Но быть собранными всё время — невозможно. Концентрация — мышца, и она может не выдержать, если не давать ей отдохнуть.</p>
             </div>
             <div class="main__subsection">
               <h3 class="main__subsection-title title-decor">Еда</h3>
-              <p class="main__text">Мы — не ваша бабушка, но это правда важно. Слишком тяжёлая или слишком лёгкая еда может вызвать сонливость или голод, что мешает сосредоточиться. Лучше всего — сбалансированный приём пищи с белками, жирами и углеводами.</p>
+              <p class="main__text">«Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно доставляют в мозг энергию и помогают ему лучше работать. Но уходит эта энергия также быстро, как и приходит. А мы в результате попадаем на «углеводные качели»: как только действие «быстрых углеводов» заканчивается, мы чувствуем усталость и сонливость. И хотим ещё больше быстрых углеводов.</p>
             </div>
             <div class="main__subsection">
               <h3 class="main__subsection-title title-decor">Гаджеты</h3>
@@ -98,15 +100,15 @@
               </div>
               <div class="main__item">
                 <h4 class="main__item-title title-decor">Прогуляйтесь</h4>
-                <p class="main__text">Или даже <a href="#" class="main__link">показал</a> пробегитесь. Лучше найти парк или лес: один эксперимент показал, что созерцание природы повышает концентрацию, в то время как после просмотра городских пейзажей она наоборот понижается. Можно совместить прогулку с физическими упражнениями или бегом — так в мозг поступит ещё больше кислорода и он будет лучше работать. Но и простая двадцатиминутная прогулка — тоже отличный вариант.</p>
+                <p class="main__text">Или даже пробегитесь. Лучше найти парк или лес: один эксперимент <a href="#" class="main__link">показал</a>, что созерцание природы повышает концентрацию, в то время как после просмотра городских пейзажей она наоборот понижается. Можно совместить прогулку с физическими упражнениями или бегом — так в мозг поступит ещё больше кислорода и он будет лучше работать. Но и простая двадцатиминутная прогулка — тоже отличный вариант.</p>
               </div>
               <div class="main__item">
                 <h4 class="main__item-title title-decor">Хорошо ешьте</h4>
-                <p class="main__text">Мы — не ваша бабушка, но это правда важно. Слишком тяжёлая или слишком лёгкая еда может вызвать сонливость или голод, что мешает сосредоточиться. Лучше всего — сбалансированный приём пищи с белками, жирами и углеводами.</p>
+                <p class="main__text">Мы — не ваша бабушка, но это правда важно. Выбирайте продукты, которые препятствуют резким скачкам сахара в крови. Например, с высоким содержанием клетчатки: овощи, ягоды, бобовые (нут, чечевица, фасоль), коричневый рис, хлеб из цельнозерновой пшеницы.</p>
               </div>
               <div class="main__item">
                 <h4 class="main__item-title title-decor">Читайте</h4>
-                <p class="main__text">Чтение помогает тренировать концентрацию внимания. Начните с коротких текстов и постепенно увеличивайте их длину. Это поможет вашему мозгу привыкнуть к длительной фокусировке на одной задаче.</p>
+                <p class="main__text">Настоящие бумажные книги. Это правда помогает с концентрацией: чтобы прочитать пост в соцсети, достаточно нескольких минут или даже секунд. А вот интересная книга способна затянуть и на несколько часов и круто тренирует направленное внимание.</p>
               </div>
             </div>
           </div>
@@ -123,8 +125,10 @@
         </div>
       </section>
     </main>
-    <footer class="footer decorated-zone">
-      <h2 class="footer__focus focus-title">focus</h2>
+    <footer class="footer">
+      <div class="footer__container decorated-zone">
+        <h2 class="footer__focus focus-title">focus</h2>
+      </div>
     </footer>
   </body>
 </html>

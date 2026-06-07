@@ -5,7 +5,7 @@
 :root {
   --bg-image: url(../images/cover-image-dark.png);
 
-  --bg-color: #000000;
+  --bg-color: #000028;
   --text-color: #ffffff;
   --accent-color: #ff0070;
   --title-color: #db00ff;
@@ -22,7 +22,8 @@
   --page-padding: 10px;
   --dvh-full: 100dvh;
   --full-height: var(--dvh-full, 100vh);
-  --focus-height: calc(var(--full-height) - var(--page-padding) * 2);
+  --focus-height: var(--full-height);
+  --focus-min-height: 668px;
 
   @media (width >=768px) {
     --page-padding: 20px;
