@@ -1,8 +1,8 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  margin: 0;
-  padding: 0 var(--page-padding);
+  margin: 0 auto;
+  padding: 0;
   width: 100%;
   min-inline-size: 375px;
   max-inline-size: 1440px;
@@ -48,7 +48,7 @@
 .header {
   height: var(--focus-height);
   min-height: var(--focus-min-height);
-  padding: 10px 0;
+  padding: 10px var(--page-padding);
   position: relative;
 }
 
@@ -169,7 +169,7 @@
 
 @media (width >=768px) {
   .header {
-    padding: 20px 0;
+    padding: 20px var(--page-padding);
   }
 
   .header__container {
@@ -214,6 +214,7 @@
 
 .main {
   margin-bottom: 40px;
+  padding: 0 var(--page-padding);
 }
 
 /* Main text blocks */
@@ -420,7 +421,7 @@
 .footer {
   height: var(--focus-height);
   min-height: var(--focus-min-height);
-  padding: 10px 0;
+  padding: 10px var(--page-padding);
 }
 
 .footer__container {
@@ -435,6 +436,6 @@
 
 @media (width >=768px) {
   .footer {
-    padding: 20px 0;
+    padding: 20px var(--page-padding);
   }
 }
